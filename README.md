@@ -16,3 +16,19 @@ Technologies used:
 - Docker
 - Node.js
 - Bootstrap
+
+Some environmental variables will need to be set for running the front-end and backend.
+
+Frontend
+- VUE_APP_API_URL 
+
+Backend
+In the backend, you could switch the MySQL database to an h2 database by changing application.properties in resources.
+Else, you would have to set
+- JDBC_DATABASE_URL
+- JDBC_DATABASE_USERNAME
+- JDBC_DATABASE_PASSWORD
+
+and 
+- FRONTEND_URL
+- PASSPHRASE (for JWT token)
